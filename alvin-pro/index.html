@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta name="robots" content="noindex,nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alvin Pro Auto Care | Car Wash & Detailing in Abu Dhabi</title>
+<meta name="description" content="Car wash, polishing and detailing in Al Danah, Abu Dhabi. Open 24 hours. We can come to you. Rated 4.9 on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=JetBrains+Mono:wght@500&family=IBM+Plex+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root{
+  --bg:#0a0a0b; --panel:#141416; --line:#26262a; --text:#f3f1ec; --muted:#9b988f;
+  --accent:#ff6a1a; --accent-ink:#1a0a00;
+  --ease:cubic-bezier(.2,.7,.1,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);font-family:Archivo,system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html[lang=ar] body{font-family:"IBM Plex Sans Arabic",Archivo,sans-serif}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.mono{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+html[lang=ar] .mono{font-family:"IBM Plex Sans Arabic",sans-serif;letter-spacing:0;font-size:14px}
+
+/* reveal */
+.js .rv{opacity:0;transform:translateY(40px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+.js .rv.d1{transition-delay:.1s}.js .rv.d2{transition-delay:.2s}.js .rv.d3{transition-delay:.3s}
+
+/* nav */
+nav{position:fixed;inset:0 0 auto;z-index:30;transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+nav.solid{background:rgba(10,10,11,.8);backdrop-filter:blur(14px);border-color:var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.logo{font-weight:900;letter-spacing:-.02em;font-size:19px}
+.logo span{color:var(--accent)}
+.nav-r{display:flex;gap:10px;align-items:center}
+.lang{border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:8px 14px;font-weight:700;font-size:14px;background:none;color:inherit;cursor:pointer;font-family:"IBM Plex Sans Arabic",Archivo,sans-serif}
+.nav-cta{background:var(--accent);color:var(--accent-ink);font-weight:700;padding:10px 16px;border-radius:999px;font-size:14px}
+
+/* hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:-4%;z-index:-2;background:url("https://images.unsplash.com/photo-1683647115932-b33455fe6a3e?w=2000&q=80&auto=format") center/cover;animation:kb 22s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1.02) translate(0,0)}to{transform:scale(1.14) translate(-2%,-2%)}}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(10,10,11,.55) 0%,rgba(10,10,11,.25) 35%,rgba(10,10,11,.92) 78%,var(--bg) 100%)}
+.hero .wrap{width:100%;padding-top:120px;padding-bottom:40px}
+.hero h1{font-size:clamp(52px,10vw,140px);line-height:.9;font-weight:900;letter-spacing:-.045em;max-width:10ch;margin:18px 0 24px}
+html[lang=ar] .hero h1{letter-spacing:0;line-height:1.15;font-size:clamp(44px,8vw,110px)}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.line{display:block;overflow:hidden}
+.line>span{display:inline-block}
+.js .line>span{transform:translateY(105%);transition:transform 1.1s var(--ease)}
+.js .loaded .line>span{transform:none}
+.js .loaded .line:nth-child(2)>span{transition-delay:.12s}
+.lead{font-size:clamp(17px,2vw,21px);color:#cfcbc2;max-width:50ch}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 24px;border-radius:999px;font-weight:700;font-size:16px;transition:transform .3s var(--ease),box-shadow .3s}
+.btn:hover{transform:translateY(-2px)}
+.btn-main{background:var(--accent);color:var(--accent-ink);box-shadow:0 10px 40px -10px rgba(255,106,26,.7)}
+.btn-ghost{border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(6px);background:rgba(255,255,255,.04)}
+.btn svg{width:20px;height:20px;flex:none}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:56px;border-top:1px solid rgba(255,255,255,.15)}
+.stat{padding:22px 0}
+.stat+.stat{padding-inline-start:20px;border-inline-start:1px solid rgba(255,255,255,.15)}
+.stat b{display:block;font-size:clamp(30px,4.4vw,52px);font-weight:900;letter-spacing:-.03em;line-height:1.1}
+.stat small{color:var(--muted);font-size:14px}
+
+/* marquee */
+/* always scrolls right -> left, in English and Arabic */
+.marquee{direction:ltr;background:var(--accent);color:var(--accent-ink);overflow:hidden;white-space:nowrap;padding:18px 0;font-weight:900;font-size:clamp(20px,3vw,32px);letter-spacing:-.02em}
+.marquee .track{display:inline-flex;animation:mq 30s linear infinite}
+.marquee span{padding:0 22px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+section{padding:110px 0;position:relative}
+h2{font-size:clamp(36px,6vw,76px);font-weight:900;letter-spacing:-.04em;line-height:.95;margin:14px 0 48px;max-width:15ch}
+html[lang=ar] h2{letter-spacing:0;line-height:1.2}
+
+/* services */
+.list{border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:70px 1fr 220px;gap:24px;align-items:center;padding:28px 0;border-bottom:1px solid var(--line);transition:padding .5s var(--ease)}
+.row:hover{padding-inline-start:12px}
+.row h3{font-size:clamp(22px,3vw,34px);font-weight:700;letter-spacing:-.02em;transition:color .3s}
+.row:hover h3{color:var(--accent)}
+.row p{color:var(--muted);margin-top:6px;max-width:52ch}
+.row .go{display:inline-block;margin-top:12px;font-weight:700;color:var(--accent);font-size:15px}
+.thumb{aspect-ratio:4/3;border-radius:14px;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform 1s var(--ease),filter .6s;filter:grayscale(.6) brightness(.8)}
+.row:hover .thumb img{transform:scale(1.08);filter:none}
+
+/* van */
+.van{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.van-img{border-radius:22px;overflow:hidden;aspect-ratio:4/5;position:relative}
+.van-img img{width:100%;height:100%;object-fit:cover;transform:scale(1.15);transition:transform 1.8s var(--ease)}
+.van-img.in img{transform:scale(1)}
+.badge{position:absolute;inset:auto auto 18px 18px;background:rgba(10,10,11,.75);backdrop-filter:blur(10px);border:1px solid var(--line);padding:12px 16px;border-radius:12px;font-weight:700}
+html[dir=rtl] .badge{inset:auto 18px 18px auto}
+.badge i{display:inline-block;width:8px;height:8px;border-radius:50%;background:#3ddc84;margin-inline-end:8px;box-shadow:0 0 0 0 rgba(61,220,132,.7);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 10px rgba(61,220,132,0)}100%{box-shadow:0 0 0 0 rgba(61,220,132,0)}}
+.ticks{list-style:none;display:grid;gap:14px;margin:28px 0 8px}
+.ticks li{display:flex;gap:12px;font-size:18px}
+.ticks li::before{content:"";flex:none;width:22px;height:22px;margin-top:3px;border-radius:50%;background:var(--accent) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a0a00' stroke-width='3'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/14px no-repeat}
+.van p.lead{color:var(--muted)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:32px;transition:border-color .4s,transform .4s var(--ease)}
+.step:hover{border-color:var(--accent);transform:translateY(-4px)}
+.step .n{font-family:"JetBrains Mono",monospace;color:var(--accent);font-size:14px}
+.step h3{font-size:24px;margin:16px 0 8px}
+.step p{color:var(--muted)}
+
+/* gallery */
+.gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 20px 10px;scrollbar-width:none}
+.gallery::-webkit-scrollbar{display:none}
+.gallery figure{flex:0 0 min(78vw,460px);aspect-ratio:3/4;border-radius:20px;overflow:hidden;scroll-snap-align:start}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease)}
+.gallery figure:hover img{transform:scale(1.06)}
+
+/* steps section: warm glow so it isn't flat black */
+.how{background:radial-gradient(60% 80% at 100% 0%,rgba(255,106,26,.18),transparent 60%),radial-gradient(50% 60% at 0% 100%,rgba(255,106,26,.08),transparent 60%)}
+.step{background:linear-gradient(160deg,#1c1c20,#121214)}
+
+/* reviews: photo background + coloured cards */
+.revsec{isolation:isolate;overflow:hidden;padding:120px 0}
+.revsec .bg{position:absolute;inset:0;z-index:-2;background:url("https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=2000&q=70&auto=format") center/cover}
+.revsec::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,rgba(10,10,11,.72) 25%,rgba(10,10,11,.72) 75%,var(--bg) 100%)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.rev{border-radius:22px;padding:32px;display:flex;flex-direction:column;justify-content:space-between;gap:28px;transition:transform .5s var(--ease)}
+.rev:hover{transform:translateY(-6px) rotate(-.5deg)}
+.rev q{font-size:19px;line-height:1.5;quotes:none;font-weight:500}
+.rev .who{margin-top:6px;font-size:14px;font-weight:700;opacity:.75}
+.stars{letter-spacing:3px;font-size:18px}
+.rev.c1{background:var(--accent);color:var(--accent-ink)}
+.rev.c2{background:#f3f1ec;color:#141416}
+.rev.c2 .stars{color:var(--accent)}
+.rev.c3{background:rgba(20,20,22,.65);backdrop-filter:blur(14px);border:1px solid rgba(255,106,26,.5);color:var(--text)}
+.rev.c3 .stars{color:var(--accent)}
+.rev .g{display:inline-flex;align-items:center;gap:6px}
+.rev .g svg{width:16px;height:16px}
+
+/* find us: orange glow + grid */
+.find{background:radial-gradient(50% 70% at 0% 50%,rgba(255,106,26,.16),transparent 70%),linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px) 0 0/48px 48px,linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px) 0 0/48px 48px}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:30px}
+.card dl{display:grid;gap:20px}
+.card dt{margin-bottom:4px}
+.card dd{font-size:18px}
+iframe{width:100%;height:100%;min-height:340px;border:0;border-radius:20px}
+
+.final{text-align:center;padding:160px 0;overflow:hidden;isolation:isolate}
+.final .bg{position:absolute;inset:0;z-index:-3;background:url("https://images.unsplash.com/photo-1769641156615-5d561513b3fa?w=2000&q=70&auto=format") center/cover;animation:kb 20s ease-in-out infinite alternate}
+.final::before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(180deg,var(--bg),rgba(10,10,11,.55) 40%,rgba(10,10,11,.7))}
+.final h2{margin:0 auto 32px;max-width:14ch;font-size:clamp(44px,8vw,110px)}
+.final .btns{justify-content:center}
+.glow{position:absolute;width:600px;height:600px;left:50%;top:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(255,106,26,.25),transparent 60%);z-index:-1;animation:breathe 6s ease-in-out infinite}
+@keyframes breathe{50%{transform:translate(-50%,-50%) scale(1.25);opacity:.6}}
+
+footer{padding:40px 0 120px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+.float{position:fixed;left:16px;right:16px;bottom:16px;z-index:20;display:none;justify-content:center;gap:10px;align-items:center;background:var(--accent);color:var(--accent-ink);font-weight:700;padding:16px;border-radius:999px;box-shadow:0 10px 30px rgba(0,0,0,.5);transform:translateY(140%);transition:transform .5s var(--ease)}
+.float.show{transform:none}
+
+@media (max-width:860px){
+  .steps,.reviews,.visit,.van{grid-template-columns:1fr}
+  .row{grid-template-columns:1fr;gap:14px}
+  .row .num{display:none}
+  .thumb{order:-1;aspect-ratio:16/9}
+  .thumb img{filter:none}
+  .nav-cta{display:none}
+  .float{display:flex}
+  section{padding:72px 0}
+  .stat+.stat{padding-inline-start:12px}
+  .van-img{aspect-ratio:4/3}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before{animation:none!important;transition:none!important}
+  .js .rv,.js .line>span{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="wrap">
+  <a class="logo" href="#">ALVIN PRO<span>.</span></a>
+  <div class="nav-r">
+    <button class="lang" id="lang" type="button">عربي</button>
+    <a class="nav-cta" href="https://wa.me/971563715375?text=Hi%20Alvin%20Pro%2C%20I%20want%20to%20book%20a%20wash" target="_blank" rel="noopener" data-ar="احجز عبر واتساب">Book on WhatsApp</a>
+  </div>
+</div></nav>
+
+<header class="hero" id="hero">
+  <div class="hero-bg" role="img" aria-label="Sports car being pressure washed"></div>
+  <div class="wrap">
+    <p class="mono rv" data-ar="غسيل وتلميع السيارات · الدانة، أبوظبي · مفتوح 24 ساعة">Car wash &amp; detailing · Al Danah, Abu Dhabi · Open 24h</p>
+    <h1 data-ar='<span class="line"><span>نعيد لسيارتك</span></span><span class="line"><span><em>لمعة الجديد.</em></span></span>'><span class="line"><span>Make it look</span></span><span class="line"><span><em>new</em> again.</span></span></h1>
+    <p class="lead rv d1" data-ar="تنظيف داخلي عميق، تلميع، وتفصيل كامل باليد. اترك سيارتك عندنا في شارع حمدان، أو نأتي إليك في منزلك.">Interior deep clean, polishing and full detailing, done by hand. Drop your car at our place on Hamdan Street, or we come to your home.</p>
+    <div class="btns rv d2">
+      <a class="btn btn-main" href="https://wa.me/971563715375?text=Hi%20Alvin%20Pro%2C%20I%20want%20to%20book%20a%20wash" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.3 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.6 2 1.1 1 2 1.3 2.3 1.4.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l2 1c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+        <span data-ar="احجز عبر واتساب">Book on WhatsApp</span>
+      </a>
+      <a class="btn btn-ghost" href="tel:+971563715375"><span data-ar="اتصل">Call</span>&nbsp;<bdi>056 371 5375</bdi></a>
+    </div>
+    <div class="stats rv d3">
+      <div class="stat"><b><span class="count" data-to="4.9" data-dec="1">4.9</span>★</b><small data-ar="تقييم Google">Google rating</small></div>
+      <div class="stat"><b class="count" data-to="55">55</b><small data-ar="مراجعة على Google">Google reviews</small></div>
+      <div class="stat"><b>24/7</b><small data-ar="مفتوح كل يوم">Open every day</small></div>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="track" id="mq"
+  data-ar="<span>غسيل خارجي</span><span>✦</span><span>تنظيف داخلي عميق</span><span>✦</span><span>تلميع</span><span>✦</span><span>تفصيل كامل</span><span>✦</span><span>نأتي إليك</span><span>✦</span>"><span>Exterior wash</span><span>✦</span><span>Interior deep clean</span><span>✦</span><span>Polishing</span><span>✦</span><span>Full detailing</span><span>✦</span><span>We come to you</span><span>✦</span></div></div>
+
+<section id="services"><div class="wrap">
+  <p class="mono rv" data-ar="خدماتنا">What we do</p>
+  <h2 class="rv d1" data-ar="كل ما تحتاجه سيارتك.">Everything your car needs.</h2>
+  <div class="list">
+    <div class="row rv"><span class="mono num">01</span><div><h3 data-ar="غسيل خارجي">Exterior wash</h3><p data-ar="غسيل يدوي للهيكل والجنوط والزجاج. النظافة اليومية.">Hand wash, wheels and tyres, glass. The everyday clean.</p><a class="go" href="https://wa.me/971563715375?text=Hi%2C%20price%20for%20an%20exterior%20wash%3F" target="_blank" rel="noopener" data-ar="اسأل عن السعر ←">Get price →</a></div><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?w=700&q=75&auto=format" alt="Car covered in foam"></div></div>
+    <div class="row rv"><span class="mono num">02</span><div><h3 data-ar="تنظيف داخلي عميق">Interior deep clean</h3><p data-ar="المقاعد والسجاد والطبلون وكل زاوية. أكثر ما يذكره عملاؤنا في مراجعاتهم.">Seats, carpets, dashboard, every corner. The part our reviewers keep mentioning.</p><a class="go" href="https://wa.me/971563715375?text=Hi%2C%20price%20for%20an%20interior%20deep%20clean%3F" target="_blank" rel="noopener" data-ar="اسأل عن السعر ←">Get price →</a></div><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1622329821376-a19fd6002562?w=700&q=75&auto=format" alt="Detailer working on a car"></div></div>
+    <div class="row rv"><span class="mono num">03</span><div><h3 data-ar="تلميع">Polishing</h3><p data-ar="يعيد اللمعة ويزيل الخدوش الخفيفة وبهتان الطلاء.">Brings back the shine and takes out light swirls and dull paint.</p><a class="go" href="https://wa.me/971563715375?text=Hi%2C%20price%20for%20polishing%3F" target="_blank" rel="noopener" data-ar="اسأل عن السعر ←">Get price →</a></div><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1620584898989-d39f7f9ed1b7?w=700&q=75&auto=format" alt="Polishing machine on car paint"></div></div>
+    <div class="row rv"><span class="mono num">04</span><div><h3 data-ar="تفصيل كامل">Full detailing</h3><p data-ar="من الداخل والخارج، من الأعلى إلى الأسفل. قبل بيع سيارتك، أو فقط لتدليلها.">Inside and out, top to bottom. For selling your car, or just treating it.</p><a class="go" href="https://wa.me/971563715375?text=Hi%2C%20price%20for%20full%20detailing%3F" target="_blank" rel="noopener" data-ar="اسأل عن السعر ←">Get price →</a></div><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1681163101469-5175a8925526?w=700&q=75&auto=format" alt="Sports car being detailed"></div></div>
+    <div class="row rv"><span class="mono num">05</span><div><h3 data-ar="نأتي إليك">We come to you</h3><p data-ar="مشغول؟ نأتي بالغسيل إلى منزلك أو مبناك في أبوظبي.">Busy? We bring the wash to your home or building in Abu Dhabi.</p><a class="go" href="https://wa.me/971563715375?text=Hi%2C%20can%20you%20come%20to%20my%20home%3F" target="_blank" rel="noopener" data-ar="اسأل الآن ←">Ask now →</a></div><div class="thumb"><img loading="lazy" src="https://images.unsplash.com/photo-1608506375591-b90e1f955e4b?w=700&q=75&auto=format" alt="Foam being sprayed on a sports car"></div></div>
+  </div>
+</div></section>
+
+<section><div class="wrap van">
+  <div class="van-img rv"><img id="par" loading="lazy" src="https://images.unsplash.com/photo-1565689876697-e467b6c54da2?w=1200&q=75&auto=format" alt="Wheel being washed"><div class="badge"><i></i><span data-ar="متاحون الآن، 24 ساعة">Available now, 24h</span></div></div>
+  <div>
+    <p class="mono rv" data-ar="خدمة متنقلة">Mobile service</p>
+    <h2 class="rv d1" data-ar="لا تتحرك. نحن نأتي.">Don't move. We come to you.</h2>
+    <p class="lead rv d2" data-ar="الفان مجهّز بكل العدّة. نغسل ونلمّع في موقف منزلك، صباحاً أو حتى في منتصف الليل.">Our van carries the full kit. We wash and polish right where your car is parked, morning or the middle of the night.</p>
+    <ul class="ticks rv d3">
+      <li data-ar="الفيلا أو موقف المبنى">Villa or building parking</li>
+      <li data-ar="مفتوح 24 ساعة، 7 أيام">Open 24 hours, 7 days</li>
+      <li data-ar="احجز برسالة واتساب واحدة">Book with one WhatsApp message</li>
+    </ul>
+    <div class="btns rv d3"><a class="btn btn-main" href="https://wa.me/971563715375?text=Hi%2C%20can%20you%20come%20to%20my%20home%3F" target="_blank" rel="noopener" data-ar="اطلبنا إلى منزلك">Book a home visit</a></div>
+  </div>
+</div></section>
+
+<section class="how"><div class="wrap">
+  <p class="mono rv" data-ar="كيف تحجز">How it works</p>
+  <h2 class="rv d1" data-ar="احجز برسالة واحدة.">Book in one message.</h2>
+  <div class="steps">
+    <div class="step rv"><span class="n">01</span><h3 data-ar="راسلنا">Message us</h3><p data-ar="أخبرنا بنوع سيارتك وما تحتاجه على واتساب.">Tell us your car and what it needs on WhatsApp.</p></div>
+    <div class="step rv d1"><span class="n">02</span><h3 data-ar="اختر الوقت">Pick a time</h3><p data-ar="أي وقت، ليلاً أو نهاراً. عندنا أو عندك.">Any time, day or night. Our place or yours.</p></div>
+    <div class="step rv d2"><span class="n">03</span><h3 data-ar="استلمها نظيفة">Drive away clean</h3><p data-ar="سيارتك تلمع كأنها جديدة.">Your car, looking close to new.</p></div>
+  </div>
+</div></section>
+
+<section>
+  <div class="wrap"><p class="mono rv" data-ar="من أعمالنا">The finish</p><h2 class="rv d1" data-ar="التفاصيل هي كل شيء.">Detail is everything.</h2></div>
+  <div class="gallery">
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1605164598708-25701594473e?w=900&q=75&auto=format" alt="Car in foam"></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1708805283017-c662be2c7a44?w=900&q=75&auto=format" alt="Wet wheel"></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1694025893767-9a212606fbc5?w=900&q=75&auto=format" alt="Car being rinsed"></figure>
+    <figure><img loading="lazy" src="https://images.unsplash.com/photo-1680893816982-48a3deeab0db?w=900&q=75&auto=format" alt="Clean sports car"></figure>
+  </div>
+</section>
+
+<section class="revsec"><div class="bg"></div><div class="wrap">
+  <p class="mono rv" data-ar="من مراجعات Google">From our Google reviews</p>
+  <h2 class="rv d1" data-ar="4.9 نجوم من 55 مراجعة.">4.9 stars from 55 reviews.</h2>
+  <div class="reviews">
+    <div class="rev c1 rv"><q>Excellent car polishing service! The team was professional, friendly, and paid great attention to detail. My car looks amazing.</q><div><div class="stars">★★★★★</div><p class="who">Lokal Rowland · Google</p></div></div>
+    <div class="rev c2 rv d1"><q>The interior was thoroughly cleaned, and everything was done quickly and with great attention to hygiene.</q><div><div class="stars">★★★★★</div><p class="who">Rob Mil · Google</p></div></div>
+    <div class="rev c3 rv d2"><q>Alvin pro is the best in this business. Very friendly, professional and they were able to clean both my cars very well and on time.</q><div><div class="stars">★★★★★</div><p class="who">Busuulwa Musa · Google</p></div></div>
+  </div>
+</div></section>
+
+<section id="visit" class="find"><div class="wrap">
+  <p class="mono rv" data-ar="موقعنا">Find us</p>
+  <h2 class="rv d1" data-ar="في الدانة، على شارع حمدان.">Al Danah, right on Hamdan Street.</h2>
+  <div class="visit">
+    <div class="card rv"><dl>
+      <div><dt class="mono" data-ar="العنوان">Address</dt><dd data-ar="مبنى عمر بن يوسف، شارع حمدان بن محمد، الدانة، أبوظبي">Omer Bin Yosef Building, Hamdan Bin Mohammed St, Al Danah, Abu Dhabi</dd></div>
+      <div><dt class="mono" data-ar="ساعات العمل">Hours</dt><dd data-ar="مفتوح 24 ساعة، 7 أيام">Open 24 hours, 7 days</dd></div>
+      <div><dt class="mono" data-ar="هاتف / واتساب">Phone / WhatsApp</dt><dd><a href="tel:+971563715375"><bdi>056 371 5375</bdi></a></dd></div>
+    </dl>
+    <div class="btns"><a class="btn btn-main" href="https://www.google.com/maps/search/?api=1&query=Alvin+Pro+Auto+Care+Car+Wash+and+Detailing+Abu+Dhabi" target="_blank" rel="noopener" data-ar="الاتجاهات">Get directions</a></div>
+    </div>
+    <iframe class="rv d1" loading="lazy" src="https://maps.google.com/maps?q=Alvin%20Pro%20Auto%20Care%20Car%20Wash%20and%20Detailing%20Abu%20Dhabi&z=16&output=embed" title="Map"></iframe>
+  </div>
+</div></section>
+
+<section class="final"><div class="bg"></div><div class="glow"></div><div class="wrap">
+  <h2 class="rv" data-ar="جاهزين متى ما كنت جاهز.">Ready when you are.</h2>
+  <div class="btns rv d1"><a class="btn btn-main" href="https://wa.me/971563715375?text=Hi%20Alvin%20Pro%2C%20I%20want%20to%20book%20a%20wash" target="_blank" rel="noopener" data-ar="احجز عبر واتساب">Book on WhatsApp</a></div>
+</div></section>
+
+<footer><div class="wrap">
+  <span data-ar="© 2026 ألفين برو للعناية بالسيارات">© 2026 Alvin Pro Auto Care Car Wash &amp; Detailing</span>
+  <span data-ar="أبوظبي، الإمارات">Abu Dhabi, UAE</span>
+</div></footer>
+
+<a class="float" id="float" href="https://wa.me/971563715375?text=Hi%20Alvin%20Pro%2C%20I%20want%20to%20book%20a%20wash" target="_blank" rel="noopener" data-ar="احجز عبر واتساب">Book on WhatsApp</a>
+
+<script>
+// marquee: duplicate content so it loops seamlessly
+const mq=document.getElementById('mq');mq.dataset.en=mq.innerHTML;
+function fillMq(){mq.innerHTML=mq.innerHTML+mq.innerHTML}
+// language
+const btn=document.getElementById('lang');
+function setLang(l){
+  const html=document.documentElement;html.lang=l;html.dir=l==='ar'?'rtl':'ltr';
+  document.querySelectorAll('[data-ar]').forEach(el=>{
+    if(el.dataset.en===undefined)el.dataset.en=el.innerHTML;
+    el.innerHTML=l==='ar'?el.dataset.ar:el.dataset.en;
+  });
+  fillMq();
+  btn.textContent=l==='ar'?'EN':'عربي';
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+btn.onclick=()=>setLang(document.documentElement.lang==='ar'?'en':'ar');
+let start='en';try{start=localStorage.getItem('lang')||'en'}catch(e){}
+if(start==='ar')setLang('ar');else fillMq();
+
+// hero intro
+requestAnimationFrame(()=>setTimeout(()=>document.getElementById('hero').classList.add('loaded'),80));
+// reveal on scroll
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// count-up
+document.querySelectorAll('.count').forEach(el=>{
+  const to=+el.dataset.to,dec=+(el.dataset.dec||0),t0=performance.now()+400;
+  const tick=t=>{const p=Math.min(1,Math.max(0,(t-t0)/1400)),v=to*(1-Math.pow(1-p,3));el.textContent=v.toFixed(dec);if(p<1)requestAnimationFrame(tick)};
+  requestAnimationFrame(tick);
+});
+// nav + floating button
+const nav=document.getElementById('nav'),fl=document.getElementById('float');
+addEventListener('scroll',()=>{const y=scrollY;nav.classList.toggle('solid',y>40);fl.classList.toggle('show',y>innerHeight*.6)},{passive:true});
+</script>
+</body>
+</html>
